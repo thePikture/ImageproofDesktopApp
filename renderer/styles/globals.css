@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        @apply bg-gray-100
+    }
+}
+
+/* .left-section{
+    background-image: url('../public/images/pexels-andre-furtado-1264210.jpg');
+    height: 100vh;
+    width: 70%;
+    object-fit: contain;
+} */
+.carousel-control-next-icon {
+
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 50%);
+    background-color: #000;
+}
+
+.carousel-control-prev-icon {
+
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 50%);
+    background-color: #000;
+}
+
+.carousel-control-next {
+    right: 130px;
+}
+
+.carousel-control-prev {
+    left: 80px;
+}

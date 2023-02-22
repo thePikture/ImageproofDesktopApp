@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "name": "Imageproof.ai",
+  "description": "Imageproof",
+  "version": "1.1.0",
+  "author": "Frameincam",
+  "main": "app/background.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frameincam/Imageproof.git"
+  },
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "build:all": "nextron build --all",
+    "build:win32": "electron-builder && nextron build --win --ia32",
+    "build:win64": "nextron build --win --x64",
+    "build:mac": "nextron build --mac --x64",
+    "build:linux": "nextron build --linux",
+    "postinstall": "electron-builder install-app-deps",
+    "release": "set GH_TOKEN=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 && electron-builder"
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "bootstrap": "^5.2.3",
+    "compressorjs": "^1.1.1",
+    "electron-log": "^4.4.8",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0",
+    "electron-updater": "^5.3.0",
+    "getmac": "^5.20.0",
+    "node-disk-info": "^1.3.0",
+    "react-bootstrap": "^2.7.0",
+    "react-icons": "^4.7.1",
+    "react-image-file-resizer": "^0.4.8",
+    "react-progressbar": "^15.4.1",
+    "sharp": "^0.31.3",
+    "sweetalert2": "^11.6.16",
+    "swr": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "electron": "^20.1.0",
+    "electron-builder": "^23.3.3",
+    "next": "^12.2.5",
+    "nextron": "^8.2.0",
+    "postcss": "^8.4.20",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.4"
+  }
+}

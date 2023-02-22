@@ -1,0 +1,17 @@
+appId: Imageproof.ai
+productName: Imageproof
+copyright: Copyright © 2022 Frameincam
+icon: icon.ico
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+nsis:
+  license: "licence.rtf"
+win:
+  publish:
+    - github
